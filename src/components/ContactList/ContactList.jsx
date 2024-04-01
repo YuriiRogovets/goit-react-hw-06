@@ -5,8 +5,6 @@ import css from "./ContactList.module.css";
 const ContactList = () => {
   const selectContacts = useSelector((state) => state.contacts.items);
   const selectNameFilter = useSelector((state) => state.filters.name);
-  // console.log(selectContacts);
-  // console.log(selectNameFilter);
 
   return (
     <ul className={css.contactListWrap}>
@@ -18,7 +16,6 @@ const ContactList = () => {
       ).map((item) => {
         return (
           <li key={item.id}>
-            console.log({item.name});
             <Contact name={item.name} number={item.number} id={item.id} />
           </li>
         );

@@ -5,7 +5,7 @@ import { deleteContact } from "../../redux/contactsSlice";
 import css from "./Contact.module.css";
 
 const Contact = ({ name, number, id }) => {
-  const dispatch = useDispatch;
+  const dispatch = useDispatch();
 
   return (
     <div className={css.contactWrap}>
