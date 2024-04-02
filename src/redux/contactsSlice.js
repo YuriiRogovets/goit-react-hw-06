@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import { contactsData } from "../Data/contactsData.json";
 
 export const contactsSlice = createSlice({
   // Ім'я слайсу
@@ -25,6 +24,8 @@ export const contactsSlice = createSlice({
     },
   },
 });
+
+export const selectContacts = (state) => state.contacts.items;
 
 // Експортуємо генератори екшенів та редюсер
 export const { deleteContact, addContact } = contactsSlice.actions;

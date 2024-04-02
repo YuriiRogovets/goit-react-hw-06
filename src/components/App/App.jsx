@@ -4,35 +4,6 @@ import ContactList from "../ContactList/ContactList";
 import "./App.module.css";
 
 function App() {
-  // const [searchName, setSearchName] = useState("");
-  // const [contacts, setContacts] = useState(() => {
-  //   const savedContacts = window.localStorage.getItem("saved-contacts");
-  //   if (savedContacts !== null) {
-  //     return JSON.parse(savedContacts);
-  //   }
-  //   return contactsData;
-  // });
-
-  // useEffect(() => {
-  //   window.localStorage.setItem("saved-contacts", JSON.stringify(contacts));
-  // }, [contacts]);
-
-  // const addContact = (contact) => {
-  //   setContacts((prevState) => {
-  //     return [...prevState, contact];
-  //   });
-  // };
-
-  // const handleDelete = (id) => {
-  //   setContacts((prevContacts) => {
-  //     return prevContacts.filter((item) => item.id !== id);
-  //   });
-  // };
-
-  // const searchContact = contacts.filter((contact) =>
-  //   contact.name.toLowerCase().includes(searchName.toLowerCase())
-  // );
-
   return (
     <div>
       <h1>Phonebook</h1>
